@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--/**********************************************
+ Workshop 2
+ Course:APD545 - FALL2023
+ Last Name:Thakkar
+ First Name:Harshil
+ ID:160431219
+ Section:NBB
+ This assignment represents my own work in accordance with Seneca Academic
+ Policy.
+ Signature: harshil
+ Date:Oct 5 2023
+ **********************************************/-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="449.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.workshop2.ApplicationView">
+   <children>
+      <Label layoutX="318.0" layoutY="6.0" text="Fill the form to apply for job !" />
+      <Label layoutX="16.0" layoutY="46.0" text="Name :" />
+      <Label layoutX="18.0" layoutY="79.0" text="Phone Number :" />
+      <Label layoutX="18.0" layoutY="115.0" text="Email :" />
+      <TextField fx:id="name" layoutX="131.0" layoutY="42.0" />
+      <TextField fx:id="phoneNumber" layoutX="131.0" layoutY="75.0" />
+      <TextField fx:id="email" layoutX="131.0" layoutY="111.0" />
+      <Label layoutX="466.0" layoutY="46.0" text="Skills:" />
+      <TextField fx:id="enteredSkill" layoutX="401.0" layoutY="67.0" />
+      <ListView fx:id="skillsList" layoutX="381.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="addButton" layoutX="622.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add" />
+      <Button fx:id="removeButton" layoutX="622.0" layoutY="99.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Remove" />
+      <Label layoutX="668.0" layoutY="192.0" text="Companies :" />
+      <Button fx:id="submitButton" layoutX="715.0" layoutY="400.0" mnemonicParsing="false" text="Submit" />
+      <ListView fx:id="companyList" layoutX="617.0" layoutY="213.0" prefHeight="174.0" prefWidth="160.0" />
+      <Button fx:id="clearButton" layoutX="617.0" layoutY="400.0" mnemonicParsing="false" text="Clear" />
+      <Button fx:id="exitButton" layoutX="758.0" layoutY="11.0" mnemonicParsing="false" text="Exit" />
+      <ChoiceBox fx:id="companyDetail" layoutX="611.0" layoutY="167.0" prefHeight="25.0" prefWidth="138.0" />
+      <Button fx:id="detailsButton" layoutX="749.0" layoutY="167.0" mnemonicParsing="false" text="Details" />
+      <Label layoutX="655.0" layoutY="144.0" text="Company Details :" />
+   </children>
+</Pane>

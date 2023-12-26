@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/**********************************************
+ Workshop 3
+ Course:APD545 - Fall2023
+ Last Name: Thakkar
+ First Name:Harshil
+ ID:160431219
+ Section: NBB
+ This assignment represents my own work in accordance with Seneca Academic
+ Policy.
+ harshil
+ Date:oct 9 2023
+ **********************************************/-->
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+          fx:controller="com.example.workshop3.ApplicationView">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label text="Fill the form to apply for job !"/>
+        <Label text="Name :"/>
+        <Label text="Phone Number :"/>
+        <Label text="Email :"/>
+        <TextField fx:id="name"/>
+        <TextField fx:id="phoneNumber"/>
+        <TextField fx:id="email"/>
+        <Label text="Skills:"/>
+        <TextField fx:id="enteredSkill"/>
+        <ListView fx:id="skillsList" prefHeight="200.0" prefWidth="200.0"/>
+        <Button fx:id="addButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Add"/>
+        <Button fx:id="removeButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Remove"/>
+        <Label text="Companies :"/>
+        <Button fx:id="submitButton" mnemonicParsing="false" text="Submit"/>
+        <ListView fx:id="companyList" prefHeight="174.0" prefWidth="160.0"/>
+        <Button fx:id="clearButton" mnemonicParsing="false" text="Clear"/>
+        <Button fx:id="exitButton" mnemonicParsing="false" text="Exit"/>
+        <ChoiceBox fx:id="companyDetail" prefHeight="25.0" prefWidth="138.0"/>
+        <Button fx:id="detailsButton" mnemonicParsing="false" text="Details"/>
+        <Label text="Company Details :"/>
+    </children>
+</GridPane>
