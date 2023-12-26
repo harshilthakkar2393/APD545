@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/**********************************************
+ Workshop 4
+ Course:APD545 - Fall 2023
+ Last Name:Thakkar
+ First Name:Harshil
+ ID:160431219
+ Section:NBB
+ This assignment represents my own work in accordance with Seneca Academic
+ Policy.
+ harshil
+ Date:Oct 18, 2023
+ **********************************************/-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" hgap="5.0" prefHeight="141.0" prefWidth="619.0" vgap="5.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workshop5.ApplicationViewController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="101.0" minHeight="0.0" prefHeight="101.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <MenuBar fx:id="menuBar" prefHeight="28.0" prefWidth="624.0" GridPane.valignment="TOP">
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+               <items>
+                        <MenuItem fx:id="exitOption" mnemonicParsing="false" text="Exit" />
+                        <MenuItem fx:id="logOut" mnemonicParsing="false" text="Log out" />
+               </items>
+                </Menu>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="aboutOption" mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <GridPane hgap="5.0" prefHeight="101.0" prefWidth="634.0" vgap="5.0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="175.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="489.0" minWidth="10.0" prefWidth="96.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="74.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="667.0" minWidth="10.0" prefWidth="147.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="694.0" minWidth="10.0" prefWidth="107.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ChoiceBox fx:id="fromList" prefHeight="30.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.valignment="CENTER" />
+                <TextField fx:id="enteredAmount" alignment="CENTER" prefHeight="27.0" prefWidth="190.0" promptText="enter amount" GridPane.halignment="RIGHT">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </GridPane.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </TextField>
+                <ChoiceBox fx:id="toList" prefHeight="26.0" prefWidth="102.0" GridPane.columnIndex="4" />
+                <Label fx:id="result" text="0.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+                    <font>
+                        <Font name="System Bold Italic" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="toLabel" text="To:" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+    </children>
+</GridPane>

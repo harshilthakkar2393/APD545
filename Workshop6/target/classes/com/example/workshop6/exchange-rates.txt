@@ -1,0 +1,3 @@
+From Currency: INR, To Currency: CAD, Exchange rate: 0.016
+From Currency: USD, To Currency: CAD, Exchange rate: 1.37
+From Currency: EUR, To Currency: CAD, Exchange rate:1.49

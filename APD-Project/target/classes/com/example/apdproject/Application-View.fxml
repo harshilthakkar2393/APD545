@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--/**********************************************
+ Final Project
+ Course:APD545 - Fall 2023
+ Last Name: Thakkar
+ First Name: Harshil
+ ID: 160431219
+ Section: NBB
+ This assignment represents my own work in accordance with Seneca Academic
+ Policy.
+ harshil
+ Date: Dec 7th 2023
+ **********************************************/-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="397.0" prefWidth="606.0"
+          xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.apdproject.ApplicationViewController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+
+        <RowConstraints maxHeight="372.0" minHeight="0.0" prefHeight="33.0" vgrow="NEVER"/>
+        <RowConstraints maxHeight="372.0" minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS"/>
+    </rowConstraints>
+    <MenuBar useSystemMenuBar="true" fx:id="menu" prefHeight="27.0" prefWidth="575.0">
+        <menus>
+            <Menu fx:id="fileOption" mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem fx:id="logOffOption" mnemonicParsing="false" text="Log Off"/>
+                    <MenuItem fx:id="exitOption" mnemonicParsing="false" text="Exit"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+                <items>
+                    <MenuItem fx:id="aboutOption" mnemonicParsing="false" text="About"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <children>
+        <Button fx:id="addButton" onAction="#handleAddButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="2.0"
+                text="+" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets right="5.0"/>
+            </GridPane.margin>
+        </Button>
+        <FlowPane fx:id="Dashboard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1"/>
+    </children>
+</GridPane>
